@@ -2,11 +2,12 @@ ARG GOLANG_VERSION
 ARG ALPINE_VERSION
 FROM golang:${GOLANG_VERSION}-alpine${ALPINE_VERSION} as builder
 
-RUN apk --no-cache --virtual .build-deps add make gcc musl-dev binutils-gold
+RUN apk --no-cache --virtual .build-deps add make gcc musl-dev binutils-gold git
 
 COPY . /app
 WORKDIR /app
 
+ENV GOSUMDB=off
 RUN make build
 
 

@@ -12,6 +12,7 @@ import (
 	"github.com/go-contrib/uuid"
 	"golang.org/x/sync/errgroup"
 
+	jose "github.com/DKolibar/krakend-jose/v2"
 	krakendbf "github.com/krakendio/bloomfilter/v2/krakend"
 	asyncamqp "github.com/krakendio/krakend-amqp/v2/async"
 	audit "github.com/krakendio/krakend-audit"
@@ -21,7 +22,6 @@ import (
 	gelf "github.com/krakendio/krakend-gelf/v2"
 	gologging "github.com/krakendio/krakend-gologging/v2"
 	influxdb "github.com/krakendio/krakend-influx/v2"
-	jose "github.com/krakendio/krakend-jose/v2"
 	logstash "github.com/krakendio/krakend-logstash/v2"
 	metrics "github.com/krakendio/krakend-metrics/v2/gin"
 	opencensus "github.com/krakendio/krakend-opencensus/v2"

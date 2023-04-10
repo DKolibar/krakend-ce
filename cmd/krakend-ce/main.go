@@ -73,8 +73,8 @@ var aliases = map[string]string{
 	"github.com/devopsfaith/krakend-circuitbreaker/gobreaker": "qos/circuit-breaker",
 
 	"github.com/devopsfaith/krakend-oauth2-clientcredentials": "auth/client-credentials",
-	"github.com/devopsfaith/krakend-jose/validator":           "auth/validator",
-	"github.com/devopsfaith/krakend-jose/signer":              "auth/signer",
+	"github.com/DKolibar/krakend-jose/validator":              "auth/validator",
+	"github.com/DKolibar/krakend-jose/signer":                 "auth/signer",
 	"github_com/devopsfaith/bloomfilter":                      "auth/revoker",
 
 	"github_com/devopsfaith/krakend-botdetector": "security/bot-detector",
